@@ -36,4 +36,4 @@ RF: F1 test: 0.2502, ROC-AUC test: 0.613, and no overfitting: F1 training: 0.254
 ## **Tools**
 
 Numpy and Pandas for data wrangling and computing.
-sklearn for machine learning classification models.
+Scikit-learn for machine learning classification models.
