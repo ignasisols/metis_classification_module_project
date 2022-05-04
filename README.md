@@ -8,11 +8,11 @@ In this project I aim to predict which diabetic patients will be readmitted with
 
 In this classification project, the best performing model was a **random forests model**, but I also trained **Logistic Regression** and **XGBoost** models. 
 
-*This is a **7 min video** that I recorded in which I explain the gist of this project: https://www.youtube.com/watch?v=tw0uWofQOTg. Bear in mind that this video was recorded **before** the current iteration of this project, which means that there is no mention to the XGBoost models implemented.
+*This is a **7 min video** that I recorded in which I explain the gist of this project (Bear in mind that this video was recorded **before** the current iteration of this project, which means that there is no mention to the XGBoost models implemented):
 
 [![Alt text](https://img.youtube.com/vi/tw0uWofQOTg/0.jpg)](https://www.youtube.com/watch?v=tw0uWofQOTg)
 
-All the code is available in this github repository in the Jupyter notebook **{'notebook_final.ipynb'}**
+All the code is available in this github repository in the Jupyter notebook **'notebook_final.ipynb'**
 
 ### **Data**
 
@@ -25,7 +25,11 @@ Scikit-learn, Pandas, numpy, xgboost, imblearn, seaborn.
 
 ###  Classification metric:
 
-I chose the F1 score as the classification metric, which is a harmonic balance between precision and recall. The reason is that we care both about recall and precision: we want to predict as much readmissions as possible, but the nurse educator team might have limited resources and time. The assumptions and risks of this project are (1) The model will be trained on data from 1999-2008, which means a different historical context (the dataset, from 1999 to 2008, might be outdated as science and medicine advance fast). It also assumes that the model will generalize to UMPC hospitals. Most importantly, most patients were caucasian and older than 50 years old. Therefore, the results might not generalize well to other races, and to patients younger than 50.
+I chose the F1 score as the classification metric, which is a harmonic balance between precision and recall. The reason is that we care both about recall and precision: we want to predict as much readmissions as possible, but the nurse educator team might have limited resources and time. 
+
+### Assumptions and risks:
+
+The assumptions and risks of this project are (1) The model will be trained on data from 1999-2008, which means a different historical context (the dataset, from 1999 to 2008, might be outdated as science and medicine advance fast). It also assumes that the model will generalize to the particular hospital were this model is deployed. Most importantly, most patients were caucasian and older than 50 years old. Therefore, the results might not generalize well to other races, and to patients younger than 50.
 
 
 
@@ -66,4 +70,8 @@ In the end, the best performing model was a Random Forests model with max_dept =
 The final F1 score for the Random Forests model was 0.253 (for the test set), slightly better than the other models. The ROC-AUC was 0.6453.
 
 If we look at the confusion matrix, this model would be useful for the hospital and nurse educator team. For each 100 patients that are going to be readmitted every month, the model would detect ~ 47 of those patients. And, if the nurse educator team was to naively target all the patients with customized education programs, that would take them ~468 hours per month (if they spent 30 min with each patient). In contrast, this model would allow them to target all the patients that are going to be readmitted in just 136 hours/month. 
+
+
+
+![](business_impact_figure.png)
 
