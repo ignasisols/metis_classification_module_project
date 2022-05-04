@@ -10,9 +10,7 @@ In this classification project, the best performing model was a **random forests
 
 *This is a **7 min video** that I recorded in which I explain the gist of this project: https://www.youtube.com/watch?v=tw0uWofQOTg. Bear in mind that this video was recorded **before** the current iteration of this project, which means that there is no mention to the XGBoost models implemented.
 
-<iframe width="560" height="315" src=" https://www.youtube.com/watch?v=tw0uWofQOTg" frameborder="0" allowfullscreen></iframe>
-
-
+[![Alt text](https://img.youtube.com/vi/tw0uWofQOTg/0.jpg)](https://www.youtube.com/watch?v=tw0uWofQOTg)
 
 All the code is available in this github repository in the Jupyter notebook **{'notebook_final.ipynb'}**
 
