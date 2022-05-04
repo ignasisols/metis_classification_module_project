@@ -8,9 +8,13 @@ In this project I aim to predict which diabetic patients will be readmitted with
 
 In this classification project, the best performing model was a **random forests model**, but I also trained **Logistic Regression** and **XGBoost** models. 
 
-*This is a **7 min video** that I recorded in which I explain the gist of this project: https://www.youtube.com/watch?v=tw0uWofQOTg. Bear in mind that this video was recorded before the current iteration of this project, which means that there is no mention to the XGBoost models implemented.
+*This is a **7 min video** that I recorded in which I explain the gist of this project: https://www.youtube.com/watch?v=tw0uWofQOTg. Bear in mind that this video was recorded **before** the current iteration of this project, which means that there is no mention to the XGBoost models implemented.
 
-*All the code is available in this github repository in the Jupyter notebook **{'predicting_hospital_readmissions'}**
+<iframe width="560" height="315" src=" https://www.youtube.com/watch?v=tw0uWofQOTg" frameborder="0" allowfullscreen></iframe>
+
+
+
+All the code is available in this github repository in the Jupyter notebook **{'notebook_final.ipynb'}**
 
 ### **Data**
 
